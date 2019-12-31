@@ -3,8 +3,10 @@ package com.charitha.practise.model;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
+import java.io.Serializable;
+
 @Document(collection = "events")
-public class Event {
+public class Event implements Serializable {
 
    @Id
    private String id;
